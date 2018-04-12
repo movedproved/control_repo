@@ -4,4 +4,8 @@ node default {
     content => 'Wow sugoi',
     owner   => 'root',
     }
-}    
+} 
+
+node 'puppet' {
+  include role::master_server,
+}
